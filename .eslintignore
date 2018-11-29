@@ -1,0 +1,7 @@
+gulpfile.babel.js
+config/**/*
+tasks/**/*
+node_modules/**/*
+dev/**/*
+build/**/*
+app/libs/**/*
