@@ -18,12 +18,6 @@ const autofx = {
     cascade: false
 };
 
-// gulp-clean-css 压缩 css
-const cleanCSS = {
-    compatibility: 'ie8',
-    keepSpecialComments: '*'
-};
-
 // gulp-imagemin 压缩图片
 const imagemin = {
     interlaced: true,
@@ -34,6 +28,14 @@ const imagemin = {
             removeViewBox: true
         }
     ]
+}
+
+// 图片资源转base64
+const base64 = {
+    baseDir: './dev',
+    extensions: ['png', 'jpg', 'gif'],
+    maxImageSize: 8 * 1024, // bytes
+    debug: false
 }
 
 // gulp-uglify 压缩 js
@@ -54,8 +56,8 @@ const stylus = {
 export default {
     htmlmin,
     autofx,
-    cleanCSS,
     uglify,
     imagemin,
+    base64,
     stylus
 }

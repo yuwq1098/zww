@@ -1,6 +1,47 @@
 
+@import "./util/variable"
+@import "./util/mixin";
+@import "./util/tool";
+
 /* 首页样式 */
 body
-    background: #244
-    color: #e00
-    font-size: 15px
+    background: $c_base_bg
+    color: $c_base_font
+    font-size: $s_base_font
+
+// LOGO
+.m-logo
+    width: $w = 100px
+    height: $h = 80px
+    _completeCenter(25px,auto,25px,auto)
+    img 
+        width @width
+        _completeCenter()
+
+// 左侧栏
+.m-left-menu
+    width $menu_w = 100px
+    height $menu_h = ((32px + 2px) * 5) + (15px * 4)
+    _completeCenter(30px,auto)
+    .lm-list
+        .lm-item
+            width $item_w = 100px
+            height $item_h = 32px
+            line-height @height
+            @extend .f__tac
+            _borderAll($c_none)
+            _borderRadiusAll(2px)
+            _spacingPlus(2px)
+            _allCursor()
+            &.lm-item + .lm-item
+                margin 15px 0 0 0
+            a
+                color $c_base_font
+            &.active, &:hover
+                a
+                    color $c_act_font
+            &.active
+                _borderAll($c_highlight)
+
+
+

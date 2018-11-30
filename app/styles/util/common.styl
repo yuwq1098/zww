@@ -1,0 +1,67 @@
+// 引入格式化css文件
+@import "./normalize.styl"
+@import "./tool.styl"
+
+ /* ==========================================================================
+   迅维网站样式初始化
+   ========================================================================== */
+
+*
+    margin: 0;
+    padding: 0;
+
+body
+    display: block;
+    overflow: hidden;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    // 让字体更清晰
+    -webkit-font-smoothing: antialiased;
+
+a
+    color: inherit;
+    text-decoration: none;
+
+del
+    text-decoration: line-through;
+
+p,h1,h2,h3,h4,h5,h6
+    margin: 0;
+    padding: 0;
+    display: block;
+
+button
+    cursor: pointer;
+
+a,button,input,a:focus
+    outline: none;
+
+ul,li
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+
+section,div,span,em,i,p,h1,h2,h3,h4,h5,h6
+    cursor: default;
+
+a, a *
+    cursor: pointer;
+
+em, i, strong
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+
+/*去掉谷歌，火狐下的type="number"中的右边箭头*/
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
+   -webkit-appearance: none !important
+
+input[type=number]
+    -moz-appearance:textfield;
+
+// 迅维网站基本样式
+html,body
+    @extend .f__allscreen;

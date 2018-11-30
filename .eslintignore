@@ -5,3 +5,5 @@ node_modules/**/*
 dev/**/*
 build/**/*
 app/libs/**/*
+app/page/**/*
+app/index.html

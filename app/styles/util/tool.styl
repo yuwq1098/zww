@@ -1,0 +1,152 @@
+// 引入stylus变量文件
+@import "./variable.styl"
+
+/* ==========================================================================
+   功能（function）（.f__）工具类
+   ========================================================================== */
+
+//-1200px布局
+.f__w1200
+    width $s_1200
+    margin 0 auto
+    position relative
+
+//-1920px布局
+.f__w1920
+    width $s_1920
+    position relative
+    margin 0 auto
+
+//-整横屏1920布局
+.f__wscreen
+    width $s_all_screen
+    min-width $s_1920
+
+//-全屏
+.f__allscreen
+    width $s_all_screen
+    height $s_all_screen
+    position relative
+
+//-清边距
+.f__nopd
+    padding 0 !important
+
+.f__nomg
+    margin 0 !important
+
+//-清浮动
+.f__clearfix
+    *zoom: 1
+    &::after
+        visibility: hidden
+        display: block
+        font-size: 0
+        content: ""
+        clear: both
+        height: 0
+
+.f__fl
+    float left
+
+.f__fr
+    float right
+    
+// 显示与隐藏
+.f__hide
+    display none
+
+.f__show
+    display block
+
+//-文本对齐
+.f__tal
+    text-align left
+
+.f__tac
+    text-align center
+
+.f__tar
+    text-align right
+
+//-溢出隐藏
+.f__oh
+    overflow hidden
+
+//-文本粗细
+.f__fwbd
+    font-weight bold
+
+.f__fwnl
+    font-weight normal
+
+//-浮动
+.f__fl
+    float left
+
+.f__fr
+    float right
+
+.f__cb
+    clear both
+
+//-定位
+.f__pc,.f__pl,.f__pr,.f__pt,.f__pb
+    position absolute
+
+.f__pc
+    left 0
+    right 0
+    margin 0 auto
+
+.f__pl
+    left 0
+
+.f__pr
+    right 0
+
+.f__pt
+    top 0
+
+.f__pb
+    bottom 0
+
+//-del样式
+.f__del
+    text-decoration line-through
+
+//-内联-块级
+.f__dib
+    display inline-block
+
+//-怪异盒模型
+.f__boxSizing
+    box-sizing border-box
+
+//-约束容器内图片宽高
+.f__imgWrap
+    &>img
+        width $s_all_screen
+        height $s_all_screen
+
+//-禁止用户对该区域进行选中
+.f__unUserSelect
+    -webkit-user-select none
+    -moz-user-select none
+    -o-user-select none
+    user-select none
+
+//-启用硬件加速
+.f__willAccelerate
+    /*提醒浏览器提前准备硬件加速,兼容性不行*/
+    will-change transform
+    /*触发硬件加速 CPU 转 GPU*/
+    -webkit-transform translate3d(0,0,0)
+    -moz-transform translate3d(0,0,0)
+    -o-transform translate3d(0,0,0)
+    transform translate3d(0,0,0)
+
+//-文字间距
+.f__fontSpacing
+    letter-spacing 1px
+    text-indent 1px
