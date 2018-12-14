@@ -1,4 +1,7 @@
 {
   "libs/jquery-3.2.1.min.js": "libs/jquery-3.2-22ba0d7c31.1.min.js",
-  "scripts/index.js": "scripts/index-8936045ecd.js"
+  "scripts/algorithms.js": "scripts/algorithms-1aa26ed5f8.js",
+  "scripts/helpers.js": "scripts/helpers-01e5fc6383.js",
+  "scripts/index.js": "scripts/index-528609710c.js",
+  "scripts/news.js": "scripts/news-73b0a1e629.js"
 }

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1780319-7cba-4296-8bc1-169c169bdd12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/index.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/index.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/util/variable.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/util/variable.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/rev/css/rev-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/rev/css/rev-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/rev/js/rev-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/rev/js/rev-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/scripts/index-5276fea558.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/scripts/index-8936045ecd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-06cc98743a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-0f88213929.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-167881f635.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-1bb25475ac.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-2122b174c6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-2de580217f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-2e16896ff2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-2f740f5833.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-344988bd7f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-35659cd2fb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-3d1f88e587.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-40e2a00b9e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-430f676ef4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-45d75d2a7f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-483d661893.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-5f860fdef3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-6081631842.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-677b2ce557.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-6c81ef3eac.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-6f7cfd4544.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-77cf511762.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-864442fead.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-913d22497d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-92e26bbfaf.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-9c995d2242.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-a4cf0d33e5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-aa30412a1e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-aa5a18099b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-af33e18604.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-b16429d0bd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-b24fc892f9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-b4270c7a21.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-b5bb458c89.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-cff3c1be65.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-d274f622a8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-d3c7aa42ab.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-e1b0e8c356.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-e65657f6ac.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-ec28dd8b34.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-f565492b0c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-f6ca1342df.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-f7c71a0d12.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/index-f95d0fdfd7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-0834390a76.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-0fbb3a37bf.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-235346d647.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-2b41237e2d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-2b72a3d019.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-3c251250fa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-401bea4dbb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-46a73cba16.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-79ae371b7b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-82d56a8fe6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-c0dc3996c9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-c701752613.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-da87f5dc53.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-ea0afcf74a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/common-f25b65e419.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-0f5e8fcb54.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-2c8f08873e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-4db51f0b89.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-563e4ae475.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-5c02330170.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-651d4ce70b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-6b58a2979e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-721826ebef.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-725e8452fe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-7e6831cc98.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-a6661349fa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-a8f3262de9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-d2ef2b469e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-ef70459285.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-ef9560754f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/styles/util/tool-f136932539.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/dev.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="67" />
+    <option name="y" value="32" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zww" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zww" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="E:\zewan_website\zww\node_modules\eslint" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1780319-7cba-4296-8bc1-169c169bdd12" name="Default Changelist" comment="" />
+      <created>1543986622436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543986622436</updated>
+      <workItem from="1543986628726" duration="645000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="645000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="32" width="1400" height="1000" extended-state="1" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

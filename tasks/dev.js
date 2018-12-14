@@ -3,6 +3,11 @@ import runSequence from 'run-sequence';       // 设定同步异步执行任务
 import filter from "gulp-filter";             // 文件筛选
 import concat from "gulp-concat";             // 合并文件
 import rename from "gulp-rename";             // 文件重命名
+import browserify from "browserify";          // 一个浏览器端代码模块化工具
+import webpack from 'webpack';
+import gulpWebpack from 'webpack-stream';
+import watch from "gulp-watch";               // 解决文件新增不触发watch的问题
+import changed from "gulp-changed";           // 接收发生变化的文件
 import stylus from 'gulp-stylus';             // 编译 stylus
 import base64 from 'gulp-base64';             // 图片转换成Base64编码
 import autoprefixer from 'gulp-autoprefixer'; // css 浏览器前缀补全
@@ -13,8 +18,9 @@ import csso from "gulp-csso";                 // css 压缩
 import imagemin from "gulp-imagemin";         // 图片 压缩
 import plumber from "gulp-plumber";           // 防止出错后的中断
 import del from "del";                        // 删除文件
+import {log,colors} from 'gulp-util';
 import rev from "gulp-rev";                   // 版本号生成插件
-import revCollector  from "gulp-rev-collector";    // 替换版本号路径插件
+import revCollector from "gulp-rev-collector";    // 替换版本号路径插件
 
 import browserSc from "browser-sync";         // 静态服务器
 const browserSync = browserSc.create();
@@ -34,6 +40,7 @@ const view_path = './app/**/*.html'
 gulp.task('css',function() {
     return gulp.src(css_path)
         .pipe(plumber())
+        .pipe(changed(base_dist + '/styles'))
         .pipe(stylus(config.stylus))
         .pipe(autoprefixer(config.autofx))
         .pipe(base64(config.base64))
@@ -48,6 +55,8 @@ gulp.task('css',function() {
 // js处理
 gulp.task('js',function() {
     return gulp.src(js_path)
+        .pipe(plumber())
+        .pipe(changed(base_dist))
         .pipe(babel())
 		.pipe(uglify())
         .pipe(rev())
@@ -68,8 +77,10 @@ gulp.task('images', function () {
 // view页面处理
 gulp.task('views',function() {
     return gulp.src(view_path)
+        .pipe(plumber())
+        .pipe(changed(base_dist))
         .pipe(useref())
-		.pipe(gulp.dest('./dev'))
+		.pipe(gulp.dest(base_dist))
         .pipe(reload({ stream: true }));
 });
 
@@ -79,7 +90,7 @@ gulp.task('version', function(){
     .pipe(revCollector({
         replaceReved: true
     }))
-    .pipe(gulp.dest('./dev')); //html更换css,js文件版本，更改完成之后保存的地址
+    .pipe(gulp.dest(base_dist)); //html更换css,js文件版本，更改完成之后保存的地址
 })
 
 // 清空文件夹
@@ -117,10 +128,18 @@ gulp.task('views-js',function () {
 
 // 监听文件改动
 gulp.task('watch',function () {
-    gulp.watch(css_path, ['watch-css']);
-    gulp.watch(js_path, ['watch-js']);
-    gulp.watch(img_path, ['images']);
-    gulp.watch(view_path, ['views-js']).on('change', reload);
+    w(css_path, 'watch-css');
+    w(js_path, 'watch-js');
+    w(img_path, 'images');
+    w(view_path, 'views-js');
+
+    // 使用gulp-watch去完成文件监听， 可以监听文件的新增和删除
+    function w(path, task){
+        watch(path, function () {
+            gulp.start(task);
+            reload();
+        });
+    }
 })
 
 // 开发监控

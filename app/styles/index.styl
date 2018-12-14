@@ -43,5 +43,18 @@ body
             &.active
                 _borderAll($c_highlight)
 
+// 注脚
+.m-foot-note
+    height $foot_note_h = 22px
+    line-height @height
+    color $c_gray_font
+    font-size $s_tiny_font
+    @extend .f__tac
+    _completeCenter(auto, 20px, auto, 15px)
+    .u-link
+        margin: 0 25px 0 0
+        &:hover
+            color $c_act_font
+
 
 

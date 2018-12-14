@@ -1,33 +1,30 @@
-
 // index.html主页样式
 $(function(){
-    // let a = 5
-    // console.log(a)
-    // let m = new Map()
-    // m.set('name', 'yuwq4')
-    // console.log('有毒')
-    // m.set('desc', '年轻的小伙子')
-    // // $("body").append(m.get('name'));
-
-    // let aa = () => {
-    //     return new Promise((resolve) => {
-    //         setTimeout(() => {
-    //             resolve('有意思')
-    //         }, 2000)
-    //     })
-    // }
-
-    // aa().then((rev)=>{
-    //     console.log(rev)
-    // })
 
     // 加载logo
-    let load_logo = () => {
-        let img = new Image()
-        img.src = "../imgs/zww_logo_03.png"
-        $('.m-logo').append(img)
+    let load_logo = (url) => {
+        return new Promise((resolve,reject) => {
+            let img = new Image()
+            img.src = url
+            img.onload = () => {
+                resolve(true)
+            }
+            img.onerror = function () {
+                reject(new Error('Could not load image at ' + url));
+            }
+        })
     }
-    load_logo()
+    let load_logo_count = 0
+    load_logo('../imgs/zww_logo_030.png').then(res => {
+        $('.m-logo').append(res)
+    }).catch(err => {
+        if (load_logo_count < 3) {
+            console.log('第几次'+ load_logo_count)
+            load_logo('../imgs/zww_logo_030.png')
+        }
+        console.error(err)
+        load_logo_count++
+    })
 
     // 加载左侧导航栏
     let load_leftmenu = () => {
@@ -57,5 +54,34 @@ $(function(){
         $('.m-left-menu').append(dom)
     }
     load_leftmenu()
+    
+    // 左侧栏点击事件
+    $('.m-left-menu .lm-item').on('click', function () {
+        let scope = $(this)
+        // let index = scope.index('.m-left-menu .lm-item')
+        scope.addClass('active').siblings('.lm-item').removeClass('active')
+    })
+
+    // 其他主页链接
+    let load_footnote = () => {
+        let notes = [
+            {
+                tit: 'github',
+                link: 'https://github.com/yuwq1098'
+            },
+            {
+                tit: 'CSDN博客',
+                link: 'https://blog.csdn.net/yuwq123'
+            }
+        ]
+        let dom = ''
+        notes.forEach((item)=>{
+            dom += `<a href="${item.link}" class="u-link" target="_blank">${item.tit}</a>`
+        })
+        dom += `<span class="u-producer">Made by yu wenqiang.</a>`
+        $('.m-foot-note').append(dom)
+    }
+    load_footnote()
+
 })
 
