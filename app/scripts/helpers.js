@@ -261,13 +261,31 @@
         console.info(`The ${name} method runs ${endTime - startTime}ms, There are ${data.length} pieces of data`)
     }
 
+    /**
+     * 讲一个二维数组变成一维数组
+     * @param {Array} args 
+     */
+    const concatArr = (args) => {
+        let length = args.length;
+        if (!length) {
+            return [];
+        }
+        let arr = []
+        while(length--){
+            arr = args[length].concat(arr)
+        }
+        return arr
+    }
+
+    // 自定义的辅助函数库
     w.Helpers = {
         randomName,
         randomArray,
         randomScore,
         perfTest,
         generateNearlyOrderedArray,
-        generateRandomOrderedArray
+        generateRandomOrderedArray,
+        concatArr
     }
 
 })(window)

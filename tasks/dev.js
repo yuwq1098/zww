@@ -1,3 +1,4 @@
+require("babel-polyfill");
 import gulp from "gulp";
 import runSequence from 'run-sequence';       // 设定同步异步执行任务
 import filter from "gulp-filter";             // 文件筛选
@@ -21,7 +22,7 @@ import del from "del";                        // 删除文件
 import {log,colors} from 'gulp-util';
 import rev from "gulp-rev";                   // 版本号生成插件
 import revCollector from "gulp-rev-collector";    // 替换版本号路径插件
-
+import proxy from "http-proxy-middleware";  // http中间件代理
 import browserSc from "browser-sync";         // 静态服务器
 const browserSync = browserSc.create();
 const reload = browserSync.reload;
@@ -103,7 +104,16 @@ gulp.task('reload',function () {
     browserSync.init({          // 启动Browsersync服务
         server: {
             baseDir: './dev',   // 启动服务的目录 默认 index.html    
-            index: 'index.html' // 自定义启动文件名
+            index: 'index.html', // 自定义启动文件名
+            middleware: [proxy('/api',{ //需要转发的请求
+                //代理服务器的路径(协议+主机名)
+                target: 'https://dncapi.feixiaohao.com/api',
+                //是否改变原始主机头为目标url
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/api': ''
+                }
+            })]
         },
         port: 3002,             // 端口号
         open: 'external',       // 决定Browsersync启动时自动打开的网址 external 表示 可外部打开 url, 可以在同一 wifi 下不同终端测试
