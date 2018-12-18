@@ -32,7 +32,7 @@ import config from "../config/config.base";   // 引入gulp 插件的配置文�
 // 路径配置
 const base_src = './app' 
 const base_dist = './dev' 
-const css_path = './app/styles/**/*{.styl,.css}'
+const css_path = './app/styles/**/*.styl'
 const js_path = './app/**/*.js'
 const img_path = './app/imgs/**/*.{png, jpg, gif, svg}'
 const view_path = './app/**/*.html'
@@ -41,7 +41,6 @@ const view_path = './app/**/*.html'
 gulp.task('css',function() {
     return gulp.src(css_path)
         .pipe(plumber())
-        .pipe(changed(base_dist + '/styles'))
         .pipe(stylus(config.stylus))
         .pipe(autoprefixer(config.autofx))
         .pipe(base64(config.base64))

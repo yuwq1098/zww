@@ -3,9 +3,9 @@
   "index.css": "index-2ae3e7b3a4.css",
   "news.css": "news-47c01d9472.css",
   "util/common.css": "util/common-05d7548bc4.css",
-  "util/font.css": "util/font-d710385941.css",
   "util/mixin.css": "util/mixin-d41d8cd98f.css",
   "util/normalize.css": "util/normalize-ac16c3f877.css",
   "util/tool.css": "util/tool-87a3532b48.css",
-  "util/variable.css": "util/variable-d41d8cd98f.css"
+  "util/variable.css": "util/variable-d41d8cd98f.css",
+  "virtualCoin.css": "virtualCoin-ca684b2134.css"
 }

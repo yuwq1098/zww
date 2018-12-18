@@ -1,0 +1,42 @@
+
+
+@import "./util/variable"
+@import "./util/mixin";
+@import "./util/tool";
+
+body
+    background-color: $c_base_bg
+    color: $c_highlight_font
+
+.info-table
+    .head-tit
+        height: $height = 50px
+        line-height: $height
+    .table-content
+        ul
+            @extend .f__clearfix;
+            li
+                display block
+                width: 95px
+                float: left;
+                font-size: 15px;
+                height 30px;
+                line-height: 30px;
+                text-align: center
+                margin: 0 6px 6px 0
+                background-color: #e45
+            &.val-list
+                li
+                    font-size: 13px;
+                    background-color: #29d
+        span.total-price
+            display block
+            width: auto
+            float: left;
+            font-size: 15px;
+            height 30px;
+            line-height: 30px;
+            text-align: center
+            margin: 0 6px 6px 0
+            padding: 0 15px;
+            background-color: #e45

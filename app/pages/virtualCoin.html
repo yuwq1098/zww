@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>虚拟币记录</title>
-    <link rel="stylesheet" href="../styles/algorithms.css">
+    <link rel="stylesheet" href="../styles/util/common.css">
+    <link rel="stylesheet" href="../styles/virtualCoin.css">
 </head>
 <body>
+    <!-- 信息表 -->
+    <div class="info-table" id="infoTable">
+        <div class="part-01">
+            <div class="head-tit">关注的当前币价（价格/人民币）</div>
+            <div class="table-content"></div>
+        </div>
+        <div class="part-02">
+            <div class="head-tit">虚拟币目标（数量/个）</div>
+            <div class="table-content"></div>
+        </div>
+        <div class="part-03 f__clearfix">
+            <div class="head-tit">虚拟币目标价格（价格/人民币）</div>
+            <div class="table-content"></div>
+        </div>
+        <div class="part-04">
+            <div class="head-tit">虚拟币持有（数量/个）</div>
+            <div class="table-content"></div>
+        </div>
+        <div class="part-05 f__clearfix">
+            <div class="head-tit">虚拟币持有币值（价格/人民币）</div>
+            <div class="table-content"></div>
+        </div>
+    </div>
     <script src="../scripts/helpers.js"></script>
     <!-- 使用在线的axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- 引入jquery -->
+    <script src="../libs/jquery-3.2.1.min.js" charset="utf-8"></script>
     <!-- 引入当前页的js -->
     <script src="../scripts/virtualCoin.js"></script>
 </body>
